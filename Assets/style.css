@@ -1,1 +1,5 @@
 /* CSS Style sheet for Code-Quiz */
+.hidden {
+    display: none;
+}
+
