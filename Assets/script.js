@@ -44,22 +44,22 @@ var questions = [
         }
 ];
 // when user clicks button quiz starts and timer starts
-document.getElementById("startBtn").addEventListener("click", startGame);
+// document.getElementById("startBtn").addEventListener("click", startGame);
 
-function startGame() {
-        // hides start screen 
-        // document.getElementById("startScreen").classList.add("hidden");
-        // // reveals quiz
-        // document.getElementById("quiz").classList.remove("hidden");
-        // // displays choices
-        // choice1.removeAttribute("style", "display:none");
-        // choice2.removeAttribute("style", "display:none");
-        // choice3.removeAttribute("style", "display:none");
-        // choice4.removeAttribute("style", "display:none");
+// function startGame() {
+//         // hides start screen 
+//         document.getElementById("startScreen").classList.add("hidden");
+//         // reveals quiz
+//         document.getElementById("quiz").classList.remove("hidden");
+//         // displays choices
+//         choice1.removeAttribute("style", "display:none");
+//         choice2.removeAttribute("style", "display:none");
+//         choice3.removeAttribute("style", "display:none");
+//         choice4.removeAttribute("style", "display:none");
 
         counter();
-        // populate();
-};
+//         // populate();
+// };
 
 // Timing counter function
 function counter() {
