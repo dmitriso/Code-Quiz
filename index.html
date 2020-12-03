@@ -19,64 +19,25 @@
         <!-- High score tracker -->
         <a class="navbar-brand float-left" href="#">Highscore</a>
         <!-- Timer -->
-        <div class="float-right" id="timer">timer</div>
-
-
-
+        <div class="float-right" id="timer"></div>
     </nav>
-    <main>
 
+    <!-- Main section containing quiz questions -->
+    <!-- starting page click start to begin -->
+    <div id="startScreen">
+        <h1>placeholder</h1>
+        <p>placeholder</p>
+        <p><input id="startBtn" type="button" value="begin" /></p>
+    </div>
 
-        <!-- Main section containing quiz questions -->
+    <!-- questionaire card for populating questions -->
+    <div class="hidden" id="quiz">
         <!-- Heading title for quiz -->
-        <section class="card mx-auto" style="max-width: 800px;">
-            <h2 class="card-header text-center">Javascript Fundamentals Quiz!</h2>
+        <h1 id="questionNum"></h1>
+        <h2 id="question"></h2>
+        <div id="choices"></div>
+    </div>
 
-            <section class="card-body" >
-                <h3 class=" card-title text-center">Hello world!</h3>
-                <!-- Question prompt area -->
-                <p class="card-text text-center" id="questionaire">Lorem </p>
-                <!-- Answer select  -->
-                <section class=>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Default checkbox
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck2">
-                            Default checkbox
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                        <label class="form-check-label" for="defaultCheck3">
-                            Default checkbox
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                        <label class="form-check-label" for="defaultCheck4">
-                            Default checkbox
-                        </label>
-                    </div>
-                </section>
-
-
-            </section>
-        </section>
-
-
-
-
-
-
-
-        <!-- Submit button -->
-
-    </main>
     <script src="Assets/script.js"></script>
 </body>
 
