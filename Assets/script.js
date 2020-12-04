@@ -7,7 +7,7 @@ var questionEl = document.getElementById("question");
 var startButton = document.getElementById("submit");
 var score = 0;
 var i = 0;
-var countdown = 75;
+var timeLeft = 125;
 // Creates Choice Elements (buttons)
 var allChoices = document.createElement("ul");
 var choice1 = document.createElement("button");
@@ -27,25 +27,25 @@ var questions = [
                 // Choices
                 choices: ["<var>", "<script>", "<section>", "<code>"],
                 // Answer
-                correct: "b",
+                correct: "<script>",
         },
         {
                 number: 2,
                 question: "Which is the correct way to write a comment in JavaScript?",
                 choices: ["{# ... #}", "<!--- ... ---!>", "// ...", "\\ ..."],
-                correct: "c",
+                correct: "// ...",
         },
         {
                 number: 3,
                 question: "Which of the following is used to identify the array?",
                 choices: [" ===", "typeof", "isarrayType()", "=="],
-                correct: "b",
+                correct: "typeof",
         },
         {
                 number: 4,
                 question: "Which one of the following is correct?",
                 choices: ["i =+ 1;", "i += 1;", "i = i++1;", "+i+;"],
-                correct: "b",
+                correct: "i += 1;",
         }
 ];
 // when user clicks button quiz starts and timer starts
@@ -68,7 +68,7 @@ function startGame() {
 
 // Timing counter function
 function counter() {
-        var timeLeft = 125;
+        
         var timer = setInterval(function () {
                 timerEl.textContent = "Time:" + timeLeft;
                 timeLeft--;
@@ -87,15 +87,19 @@ function populate() {
         // First question
         choice1.textContent = questions[i].choices[0];
         choice1.setAttribute("value", questions[i].choices[0]);
+        choice1.addEventListener("click", checkAnswer);
         // Second question
         choice2.textContent = questions[i].choices[1];
         choice2.setAttribute("value", questions[i].choices[1]);
+        choice2.addEventListener("click", checkAnswer);
         // Third question
         choice3.textContent = questions[i].choices[2];
         choice3.setAttribute("value", questions[i].choices[2]);
+        choice3.addEventListener("click", checkAnswer);
         // Fourth question
         choice4.textContent = questions[i].choices[3];
         choice4.setAttribute("value", questions[i].choices[3]);
+        choice4.addEventListener("click", checkAnswer);
 
 
 
@@ -117,7 +121,17 @@ if (choices) {
         choice3.setAttribute("style", "display:none");
         choice4.setAttribute("style", "display:none");
 }
-
-// giving some elements a class name
-
+// Function that chekcs if answer is correct
+function checkAnswer() {
+        var  correctAnswer = questions[i].correct;
+        if (this.value === correctAnswer) {
+                timeLeft += 10;
+                console.log(score);
+        } else {
+                timeLeft -= 10;
+                console.log(score);
+        }
+        i++;
+        populate();
+}
 // document.getElementById("choiceBtn").classList.add(btn,btn-success);
