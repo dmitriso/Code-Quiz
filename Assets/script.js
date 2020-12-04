@@ -100,10 +100,6 @@ function populate() {
         choice4.textContent = questions[i].choices[3];
         choice4.setAttribute("value", questions[i].choices[3]);
         choice4.addEventListener("click", checkAnswer);
-
-
-
-
 };
 populate();
 // using set attribute to hide the previous content
