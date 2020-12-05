@@ -157,15 +157,15 @@ function endGame() {
 
 
 // When user clicks submit button at end of quiz then user information is stored in local data
-// document.getElementById("userSubmit").addEventListener("click", function (event) {
-//         event.preventDefault();
-//         var userName = document.getElementById("userName").value.trim();
-//         var user = {
-//                 Name: userName,
-//                 score: score,
-//         };
+document.getElementById("userSubmit").addEventListener("click", function (event) {
+        event.preventDefault();
+        var userName = document.getElementById("userName").value.trim();
+        var user = {
+                Name: userName,
+                score: score,
+        };
 
-//         localStorage.setItem("userData", JSON.stringify(user))
+        localStorage.setItem("userData", JSON.stringify(user))
 
-// });
+});
 
