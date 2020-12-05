@@ -11,6 +11,11 @@ When the user clicks the start button on the main screen a timer starts counting
 
 <summary>Deployed App</summary>
 
+![code-quiz](https://user-images.githubusercontent.com/64864829/101231753-5501f100-367b-11eb-9001-c05c751f075a.jpg)
+
+![code-quiz1](https://user-images.githubusercontent.com/64864829/101231754-559a8780-367b-11eb-9026-c8bf1eb3f464.jpg)
+
+![code-quiz3](https://user-images.githubusercontent.com/64864829/101231755-559a8780-367b-11eb-9aa3-629981f7dc2a.jpg)
 
 
 </details>
