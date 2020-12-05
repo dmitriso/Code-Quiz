@@ -6,6 +6,7 @@ var questionNumber = document.getElementById("questionNum")
 var questionEl = document.getElementById("question");
 var startButton = document.getElementById("submit");
 var userSubmit = document.getElementById("userSubmit")
+var userScore = document.getElementById("userScore")
 var score = 0;
 var i = 0;
 var timeLeft = 50;
@@ -151,6 +152,8 @@ function endGame() {
                 document.getElementById("quiz").classList.add("hidden");
                 document.getElementById("endQuiz").classList.remove("hidden");
                 document.getElementById("timer").classList.add("hidden");
+                document.getElementById("userScore").textContent = score;
+
 
         }
 }
